@@ -1,0 +1,43 @@
+<style>
+  .footer {
+    background-color: #007BFF; /* Blue background color */
+    padding: 30px 0;
+  }
+  .footer h4 {
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  .footer p,
+  .footer a {
+    color: #fff;
+  }
+  .footer a:hover {
+    text-decoration: none;
+    color: #f00; /* Change the color on hover as desired */
+  }
+</style>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h4>About Us</h4>
+        <p>We are a company that provides HR solutions to businesses of all sizes.</p>
+      </div>
+      <div class="col-md-4">
+        <h4>Pages</h4>
+        <ul class="list-unstyled">
+          <li><%= link_to 'About Us', about_us_path, target: '_blank', class: 'text-white' %></li>
+          <li><%= link_to 'Contact Us', contact_us_path, target: '_blank', class: 'text-white' %></li>
+          <li><%= link_to 'Privacy Policy', privacy_policy_path, target: '_blank', class: 'text-white' %></li>
+          <li><%= link_to 'Terms and Conditions', terms_and_conditions_path, target: '_blank', class: 'text-white' %></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h4>Contact Us</h4>
+        <p>Email: <a href="mailto:info@example.com" class="text-white">info@example.com</a></p>
+        <p>Phone: (123) 456-7890</p>
+      </div>
+    </div>
+  </div>
+</footer>
